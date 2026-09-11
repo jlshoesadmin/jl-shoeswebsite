@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JL Fashion — Step Into Your Style</title>
+<meta name="description" content="JL Fashion — modern everyday footwear.">
+<!--
+  JL FASHION EDITABLE ONE-PAGE SHOP
+  ---------------------------------------------------------
+  FREE STACK:
+  - HTML / CSS / JavaScript
+  - GitHub Pages for free hosting
+  - Google Analytics 4 (add your G-XXXXXXXXXX ID below)
+  - Google Forms (paste your form URL in ORDER_FORM_URL)
+  ---------------------------------------------------------
+-->
+<style>
+:root{--black:#090909;--ink:#111;--white:#fff;--muted:#707070;--line:#e7e7e7;--soft:#f5f5f3;--accent:#111;--sale:#d7352a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;color:var(--ink);background:#fff}
+button,input{font:inherit}button{cursor:pointer}a{text-decoration:none;color:inherit}
+.top{background:#0b0b0b;color:#fff;text-align:center;font-size:11px;letter-spacing:1.4px;padding:9px}
+.nav{height:72px;border-bottom:1px solid #ddd;display:flex;align-items:center;gap:24px;padding:0 5vw;position:sticky;top:0;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);z-index:20}
+.logo{font-weight:1000;font-size:27px;letter-spacing:-2px}.logo small{display:block;font-size:7px;letter-spacing:3px;text-align:center;margin-top:-4px}
+.links{display:flex;gap:25px;margin:auto;font-size:13px;font-weight:700}.icons{display:flex;gap:12px;align-items:center}.iconbtn{background:none;border:0;font-size:20px;position:relative}
+.badge{position:absolute;right:-5px;top:-4px;background:#111;color:#fff;border-radius:50%;font-size:9px;width:17px;height:17px;display:grid;place-items:center}
+.wrap{max-width:1250px;margin:auto;padding:0 28px}
+.hero{min-height:590px;background:#101010;color:#fff;display:grid;grid-template-columns:1fr 1fr;overflow:hidden}
+.hero-copy{padding:90px 7vw;display:flex;flex-direction:column;justify-content:center}
+.kicker{font-size:12px;letter-spacing:3px;font-weight:800;color:#aaa;text-transform:uppercase;margin-bottom:16px}
+h1{font-size:clamp(50px,7vw,94px);line-height:.88;letter-spacing:-5px;margin:0 0 25px}.hero p{color:#c6c6c6;max-width:500px;font-size:16px}
+.btn{border:1px solid #111;background:#111;color:#fff;padding:14px 22px;font-weight:900;display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:0}
+.btn.light{background:#fff;color:#111;border-color:#fff}.btn.outline{background:#fff;color:#111;border-color:#111}
+.hero .btn{width:max-content;margin-top:20px}
+.hero-media{min-height:590px;background:#222;position:relative;overflow:hidden}.hero-media img{width:100%;height:100%;object-fit:cover;display:block}.hero-media .edit-note{position:absolute;right:15px;bottom:15px;background:rgba(0,0,0,.72);padding:8px 11px;font-size:10px;color:#fff}
+.trust{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--line)}.trust div{padding:25px;text-align:center;border-right:1px solid var(--line);font-size:12px}.trust div:last-child{border:0}.trust b{display:block;font-size:12px;margin-bottom:5px}.trust span{color:#777}
+section{padding:80px 0}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:30px}.section-head h2{font-size:35px;letter-spacing:-1.5px;margin:0}.section-head p{color:#777;margin:0}
+.shop-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:45px}.gallery{display:grid;grid-template-columns:85px 1fr;gap:12px}.thumbs{display:flex;flex-direction:column;gap:10px}.thumb{height:85px;border:1px solid #ddd;background:#f4f4f2;padding:0;overflow:hidden}.thumb.active{border:2px solid #111}.thumb img{width:100%;height:100%;object-fit:cover}.main-img{background:#f4f4f2;min-height:560px;position:relative;display:grid;place-items:center;overflow:hidden}.main-img img{width:100%;height:100%;object-fit:cover}.product-info{padding:10px 0}.rating{font-size:13px;margin:10px 0}.stars{letter-spacing:2px}.price{font-size:34px;font-weight:950;margin:10px 0}.old{text-decoration:line-through;color:#999;font-size:15px;font-weight:500;margin-left:8px}.sale{font-size:11px;background:var(--sale);color:#fff;padding:5px 7px;margin-left:7px}.desc{color:#555;line-height:1.7}.label{display:block;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:1px;margin:25px 0 10px}.opts{display:flex;gap:8px;flex-wrap:wrap}.opt{background:#fff;border:1px solid #ccc;padding:11px 15px;min-width:45px}.opt.active{background:#111;color:#fff;border-color:#111}.qty{display:flex;border:1px solid #ccc;width:max-content;margin-top:20px}.qty button{border:0;background:#fff;width:40px}.qty span{width:45px;display:grid;place-items:center}.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.actions .btn{width:100%}
+.benefits{background:#0b0b0b;color:#fff}.benefit-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#444}.benefit{background:#0b0b0b;padding:35px;text-align:center}.benefit .big{font-size:28px}.benefit h3{margin:10px 0 5px;font-size:14px}.benefit p{font-size:12px;color:#aaa}
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.review{border:1px solid var(--line);padding:25px}.review .stars{font-size:12px}.review p{color:#444;min-height:60px}.review small{color:#888}
+.banner{background:#111;color:#fff;min-height:300px;display:grid;grid-template-columns:1fr 1fr;overflow:hidden}.banner img{width:100%;height:100%;object-fit:cover;opacity:.7}.banner-copy{padding:45px;display:flex;flex-direction:column;justify-content:center}.banner h2{font-size:50px;line-height:.9;letter-spacing:-3px;margin:8px 0}.banner p{color:#bbb}
+.newsletter{background:#f3f3f1;padding:55px;text-align:center}.newsletter h2{font-size:35px;margin:0}.newsletter p{color:#777}.emailbox{display:flex;max-width:520px;margin:20px auto 0}.emailbox input{flex:1;border:1px solid #bbb;padding:14px;background:#fff}.emailbox button{border:0;background:#111;color:#fff;padding:14px 20px;font-weight:900}
+footer{background:#090909;color:#fff;padding:60px 0 25px}.footgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.3fr;gap:30px}.footgrid h4{margin-top:0}.footgrid p,.footgrid a{color:#aaa;font-size:13px;line-height:1.8}.copy{border-top:1px solid #333;margin-top:40px;padding-top:20px;color:#777;font-size:11px}
+.drawer{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;z-index:100}.drawer.show{display:block}.cart{position:absolute;right:0;top:0;height:100%;width:min(430px,100%);background:#fff;padding:25px;overflow:auto}.cart-head{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #ddd;padding-bottom:15px}.cart-item{display:flex;gap:12px;border-bottom:1px solid #eee;padding:18px 0}.cart-item img{width:70px;height:70px;object-fit:cover;background:#f2f2f2}.cart-total{display:flex;justify-content:space-between;font-weight:900;font-size:20px;margin:20px 0}.empty{text-align:center;color:#777;padding:40px 0}
+.edit-panel{position:fixed;left:15px;bottom:15px;z-index:200}.edit-toggle{border:0;background:#111;color:#fff;border-radius:999px;padding:11px 15px;font-weight:900;box-shadow:0 10px 30px #0002}.editor{display:none;background:#fff;border:1px solid #ddd;box-shadow:0 15px 50px #0003;width:310px;padding:18px;margin-top:8px;border-radius:15px}.editor.show{display:block}.editor h3{margin-top:0}.editor label{font-size:11px;font-weight:800;display:block;margin-top:12px}.editor input{width:100%;padding:9px;border:1px solid #ccc;margin-top:5px}.editor button{margin-top:12px;width:100%;padding:10px;border:1px solid #111;background:#111;color:#fff;font-weight:800}.editor .secondary{background:#fff;color:#111}
+[contenteditable="true"]{outline:0;cursor:text}.editing{outline:2px dashed #888;outline-offset:4px}
+@media(max-width:850px){.links{display:none}.nav{padding:0 15px}.hero,.banner,.shop-grid{grid-template-columns:1fr}.hero-media{min-height:380px}.hero-copy{padding:65px 25px}.trust,.benefit-grid{grid-template-columns:1fr 1fr}.reviews{grid-template-columns:1fr}.footgrid{grid-template-columns:1fr 1fr}.main-img{min-height:390px}.wrap{padding:0 16px}.actions{grid-template-columns:1fr}}
+@media(max-width:500px){.trust,.benefit-grid,.footgrid{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:8px}.gallery{grid-template-columns:60px 1fr}.thumb{height:60px}.hero h1{letter-spacing:-3px}.banner h2{font-size:40px}}
+</style>
+</head>
+<body>
+
+<!-- Replace G-XXXXXXXXXX with your real GA4 Measurement ID -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments)}
+gtag('js',new Date());
+gtag('config','G-XXXXXXXXXX');
+</script>
+
+<div class="top">FREE SHIPPING ON ORDERS ₱1,500+ • JL FASHION • STEP INTO YOUR STYLE</div>
+
+<nav class="nav">
+  <a href="#home" class="logo">JL<small>FASHION</small></a>
+  <div class="links">
+    <a href="#home">Home</a><a href="#shop">Shop</a><a href="#benefits">Why JL</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a>
+  </div>
+  <div class="icons">
+    <button class="iconbtn" onclick="focusSearch()" aria-label="Search">⌕</button>
+    <button class="iconbtn" onclick="openCart()" aria-label="Cart">♧<span class="badge" id="count">0</span></button>
+  </div>
+</nav>
+
+<main id="home">
+  <section class="hero" style="padding:0;max-width:none">
+    <div class="hero-copy">
+      <div class="kicker" contenteditable="true">JL Fashion</div>
+      <h1 contenteditable="true">STEP INTO<br>YOUR STYLE.</h1>
+      <p contenteditable="true">Premium quality. Modern design. Everyday comfort.</p>
+      <a href="#shop" class="btn light" onclick="event.preventDefault();document.querySelector('#shop').scrollIntoView();track('shop_now',{location:'hero'})">SHOP NOW →</a>
+    </div>
+    <div class="hero-media">
+      <img id="heroImage" src="jl-product-starter.jpg" alt="JL fashion shoe">
+      <div class="edit-note">Use “Edit Site” below to change text or images.</div>
+    </div>
+  </section>
+
+  <div class="trust wrap">
+    <div><b>FREE SHIPPING</b><span>For orders ₱1,500+</span></div>
+    <div><b>SECURE ORDER FORM</b><span>Simple and convenient</span></div>
+    <div><b>EASY RETURNS</b><span>Within 7 days*</span></div>
+    <div><b>SUPPORT</b><span>We're here to help</span></div>
+  </div>
+
+  <section id="shop">
+    <div class="wrap">
+      <div class="section-head"><div><div class="kicker">Featured</div><h2>JL Urban Classic</h2></div><p>Everyday footwear, elevated.</p></div>
+      <div class="shop-grid">
+        <div class="gallery">
+          <div class="thumbs">
+            <button class="thumb active" onclick="setImage(this,'jl-product-starter.jpg')"><img src="jl-product-starter.jpg"></button>
+            <button class="thumb" onclick="setImage(this,'jl-product-starter.jpg')"><img src="jl-product-starter.jpg"></button>
+            <button class="thumb" onclick="setImage(this,'jl-product-starter.jpg')"><img src="jl-product-starter.jpg"></button>
+            <button class="thumb" onclick="uploadProductImage()"><span style="font-size:11px">＋<br>IMAGE</span></button>
+          </div>
+          <div class="main-img"><img id="productImage" src="jl-product-starter.jpg" alt="JL Urban Classic"></div>
+        </div>
+
+        <div class="product-info">
+          <div class="kicker" contenteditable="true">JL Urban Classic</div>
+          <h2 contenteditable="true">Modern Everyday Shoe</h2>
+          <div class="rating"><span class="stars">★★★★★</span> <b>4.8</b> (124 reviews)</div>
+          <div class="price" contenteditable="true">₱799 <span class="old">₱1,299</span><span class="sale">38% OFF</span></div>
+          <p class="desc" contenteditable="true">A clean and modern shoe designed for everyday wear. Its simple look makes it easy to pair with casual outfits, school looks, workwear, and streetwear.</p>
+
+          <label class="label">Color</label>
+          <div class="opts" id="colors">
+            <button class="opt active" data-color="Black">● Black</button>
+            <button class="opt" data-color="White">○ White</button>
+            <button class="opt" data-color="Beige">● Beige</button>
+          </div>
+
+          <label class="label">Size</label>
+          <div class="opts" id="sizes">
+            <button class="opt" data-size="36">36</button><button class="opt" data-size="37">37</button><button class="opt" data-size="38">38</button><button class="opt" data-size="39">39</button><button class="opt" data-size="40">40</button><button class="opt" data-size="41">41</button><button class="opt" data-size="42">42</button><button class="opt" data-size="43">43</button><button class="opt" data-size="44">44</button>
+          </div>
+
+          <div class="qty"><button onclick="changeQty(-1)">−</button><span id="qty">1</span><button onclick="changeQty(1)">+</button></div>
+          <div class="actions">
+            <button class="btn" onclick="addToCart()">ADD TO CART</button>
+            <button class="btn outline" onclick="orderNow()">BUY NOW</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="benefits" class="benefits">
+    <div class="wrap">
+      <div class="benefit-grid">
+        <div class="benefit"><div class="big">⌁</div><h3 contenteditable="true">STYLISH</h3><p contenteditable="true">Modern design for every occasion</p></div>
+        <div class="benefit"><div class="big">◌</div><h3 contenteditable="true">COMFORTABLE</h3><p contenteditable="true">Made for everyday movement</p></div>
+        <div class="benefit"><div class="big">◇</div><h3 contenteditable="true">DURABLE</h3><p contenteditable="true">Built for daily use</p></div>
+        <div class="benefit"><div class="big">₱</div><h3 contenteditable="true">AFFORDABLE</h3><p contenteditable="true">Great style at a fair price</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <div class="wrap">
+      <div class="section-head"><div><div class="kicker">Social proof</div><h2>What Our Customers Say</h2></div><p>Sample reviews for this student project.</p></div>
+      <div class="reviews">
+        <article class="review"><div class="stars">★★★★★</div><p contenteditable="true">“Super comfy and the design is really clean. Perfect for everyday use!”</p><small>— Mark D., Sample Buyer</small></article>
+        <article class="review"><div class="stars">★★★★★</div><p contenteditable="true">“I love how it matches with my outfits. Definitely worth the price!”</p><small>— Ella S., Sample Buyer</small></article>
+        <article class="review"><div class="stars">★★★★★</div><p contenteditable="true">“Simple, stylish, and comfortable. I would buy again!”</p><small>— Renz P., Sample Buyer</small></article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="banner">
+        <img src="jl-product-starter.jpg" alt="JL shoes lifestyle">
+        <div class="banner-copy">
+          <div class="kicker">Limited-time campaign</div>
+          <h2 contenteditable="true">FREE SHIPPING</h2>
+          <p contenteditable="true">On orders ₱1,500+ for the JL launch campaign.</p>
+          <a href="#shop" class="btn light" style="width:max-content;margin-top:15px" onclick="track('promotion_click')">SHOP NOW →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="padding-top:20px">
+    <div class="wrap">
+      <div class="newsletter">
+        <div class="kicker">Stay in the loop</div>
+        <h2 contenteditable="true">JOIN THE JL LIST.</h2>
+        <p contenteditable="true">Get product updates, new arrivals, and student-project campaign news.</p>
+        <form class="emailbox" onsubmit="newsletter(event)">
+          <input id="email" type="email" placeholder="Enter your email address" required>
+          <button type="submit">→</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footgrid">
+    <div><div class="logo">JL<small>FASHION</small></div><p contenteditable="true">JL Fashion is a hypothetical student shoe brand concept. Step into your style.</p></div>
+    <div><h4>Quick Links</h4><p><a href="#home">Home</a><br><a href="#shop">Shop</a><br><a href="#benefits">Why JL</a><br><a href="#reviews">Reviews</a></p></div>
+    <div><h4>Follow Us</h4><p><a href="#" onclick="social('TikTok');return false">TikTok</a><br><a href="#" onclick="social('Facebook');return false">Facebook</a><br><a href="#" onclick="social('Instagram');return false">Instagram</a></p></div>
+    <div><h4>Contact</h4><p contenteditable="true">Email: your-email@example.com<br>Ormoc City, Leyte<br>Philippines</p></div>
+  </div>
+  <div class="wrap copy">© 2026 JL Fashion • Hypothetical student project • No real payments are processed.</div>
+</footer>
+
+<div class="drawer" id="drawer" onclick="outsideCart(event)">
+  <aside class="cart">
+    <div class="cart-head"><h2>Your Cart</h2><button class="iconbtn" onclick="closeCart()">×</button></div>
+    <div id="cartItems" class="empty">Your cart is empty.</div>
+    <div class="cart-total"><span>Total</span><span id="total">₱0</span></div>
+    <button class="btn" style="width:100%" onclick="orderNow()">CONTINUE TO ORDER FORM</button>
+  </aside>
+</div>
+
+<div class="edit-panel">
+  <button class="edit-toggle" onclick="toggleEditor()">✎ Edit Site</button>
+  <div class="editor" id="editor">
+    <h3>Edit JL Fashion</h3>
+    <p style="font-size:12px;color:#777">Click any text with a dotted outline to edit it directly. Changes are saved in this browser.</p>
+    <label>Hero / product image</label>
+    <input id="imageFile" type="file" accept="image/*" onchange="loadImageFile(event)">
+    <button onclick="saveText()">Save Text Changes</button>
+    <button class="secondary" onclick="resetText()">Reset Text</button>
+    <p style="font-size:10px;color:#888">Image uploads are saved locally in this browser. For public hosting, replace the image file in the GitHub repository.</p>
+  </div>
+</div>
+
+<script>
+const ORDER_FORM_URL="PASTE_YOUR_GOOGLE_FORM_LINK_HERE";
+let selectedSize=null, selectedColor="Black", qty=1, cart=[];
+const editable=document.querySelectorAll('[contenteditable="true"]');
+
+function track(name,params={}){if(typeof gtag==="function")gtag("event",name,params);console.log("GA4:",name,params)}
+function setImage(btn,file){document.querySelectorAll(".thumb").forEach(x=>x.classList.remove("active"));btn.classList.add("active");document.getElementById("productImage").src=file;track("view_item_image",{image:file})}
+function uploadProductImage(){document.getElementById("imageFile").click()}
+function loadImageFile(e){const f=e.target.files[0];if(!f)return;const url=URL.createObjectURL(f);document.getElementById("heroImage").src=url;document.getElementById("productImage").src=url;localStorage.setItem("jl_image",url);track("image_upload",{file_type:f.type})}
+const savedImage=localStorage.getItem("jl_image");if(savedImage){document.getElementById("heroImage").src=savedImage;document.getElementById("productImage").src=savedImage}
+
+document.querySelectorAll("#colors .opt").forEach(b=>b.onclick=()=>{document.querySelectorAll("#colors .opt").forEach(x=>x.classList.remove("active"));b.classList.add("active");selectedColor=b.dataset.color;track("select_color",{color:selectedColor})});
+document.querySelectorAll("#sizes .opt").forEach(b=>b.onclick=()=>{document.querySelectorAll("#sizes .opt").forEach(x=>x.classList.remove("active"));b.classList.add("active");selectedSize=b.dataset.size;track("select_size",{size:selectedSize})});
+function changeQty(n){qty=Math.max(1,qty+n);document.getElementById("qty").textContent=qty}
+function addToCart(){if(!selectedSize){alert("Please select a shoe size.");return}const item={name:"JL Urban Classic",price:799,size:selectedSize,color:selectedColor,qty};cart.push(item);renderCart();track("add_to_cart",{currency:"PHP",value:799*qty,items:[{item_name:item.name,price:799,quantity:qty,item_variant:selectedColor+" / "+selectedSize}]});openCart()}
+function renderCart(){const box=document.getElementById("cartItems");if(!cart.length){box.className="empty";box.textContent="Your cart is empty."}else{box.className="";box.innerHTML=cart.map((x,i)=>`<div class="cart-item"><img src="${document.getElementById("productImage").src}"><div style="flex:1"><b>${x.name}</b><br><small>${x.color} • Size ${x.size} • Qty ${x.qty}</small><br><small>₱${(x.price*x.qty).toLocaleString()}</small></div><button onclick="removeItem(${i})" style="border:0;background:none;text-decoration:underline">Remove</button></div>`).join("")}const total=cart.reduce((a,x)=>a+x.price*x.qty,0);document.getElementById("total").textContent="₱"+total.toLocaleString();document.getElementById("count").textContent=cart.reduce((a,x)=>a+x.qty,0)}
+function removeItem(i){cart.splice(i,1);renderCart();track("remove_from_cart")}
+function openCart(){document.getElementById("drawer").classList.add("show");renderCart();track("view_cart")}
+function closeCart(){document.getElementById("drawer").classList.remove("show")}
+function outsideCart(e){if(e.target.id==="drawer")closeCart()}
+function orderNow(){track("begin_order",{product_name:"JL Urban Classic",size:selectedSize||"not_selected",color:selectedColor||"not_selected"});if(ORDER_FORM_URL.includes("PASTE_")){alert("Connect your Google Form first: edit ORDER_FORM_URL in index.html.");return}window.open(ORDER_FORM_URL,"_blank")}
+function newsletter(e){e.preventDefault();track("newsletter_signup");alert("Thank you! For this student demo, the email was not sent anywhere.");e.target.reset()}
+function social(platform){track("social_link_click",{platform});alert(platform+" is a placeholder. Replace the # link in index.html with your real profile.")}
+function focusSearch(){const q=prompt("What are you looking for?");if(q){track("search",{search_term:q});document.getElementById("shop").scrollIntoView()}}
+function toggleEditor(){document.getElementById("editor").classList.toggle("show");editable.forEach(x=>x.classList.toggle("editing"))}
+function saveText(){editable.forEach((el,i)=>localStorage.setItem("jl_text_"+i,el.innerHTML));alert("Text changes saved on this browser.")}
+function resetText(){if(confirm("Reset saved text on this browser?")){editable.forEach((el,i)=>localStorage.removeItem("jl_text_"+i));location.reload()}}
+editable.forEach((el,i)=>{const s=localStorage.getItem("jl_text_"+i);if(s)el.innerHTML=s;el.addEventListener("input",()=>localStorage.setItem("jl_text_"+i,el.innerHTML))})
+</script>
+</body>
+</html>
