@@ -45,7 +45,7 @@ const products = [
         color: "Sage Green",
         category: "green",
         price: 1199,
-        image: "images/gray.jpg",
+        image: "gray.jpg",
         description:
             "A clean sage green JL sneaker designed for everyday comfort and versatile style."
     },
@@ -56,7 +56,7 @@ const products = [
         color: "Sky Blue",
         category: "blue",
         price: 1199,
-        image: "images/blue.jpg",
+        image: "blue.jpg",
         description:
             "A fresh sky blue JL sneaker made for casual days and everyday movement."
     },
@@ -67,7 +67,7 @@ const products = [
         color: "Blush Pink",
         category: "pink",
         price: 1199,
-        image: "images/pink.png",
+        image: "pink.png",
         description:
             "A soft blush pink colorway combining clean design with everyday comfort."
     },
@@ -78,7 +78,7 @@ const products = [
         color: "Red",
         category: "red",
         price: 1199,
-        image: "images/red.png",
+        image: "red.png",
         description:
             "A bold red JL sneaker made to add character to your everyday style."
     },
@@ -89,7 +89,7 @@ const products = [
         color: "Sand Beige",
         category: "neutral",
         price: 1199,
-        image: "images/wbr.jpg",
+        image: "wbr.jpg",
         description:
             "A classic navy blue JL sneaker designed for everyday outfits."
     },
@@ -100,7 +100,7 @@ const products = [
         color: "Black",
         category: "black",
         price: 1199,
-        image: "images/wb.jpg",
+        image: "wb.jpg",
         description:
             "A clean black JL sneaker with a simple and timeless look."
     },
