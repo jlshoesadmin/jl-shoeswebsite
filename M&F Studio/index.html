@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="M&F Studio™ — discover your signature look with professional barbering and hair styling.">
+
+  <title>M&F Studio™ | Discover Your Signature Look</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="navbar">
+  <a href="#home" class="logo">
+    <span class="logo-mark">M&F</span>
+    <span class="logo-text">
+      M&F STUDIO<sup>™</sup>
+      <small>BARBERING &amp; HAIR STYLING</small>
+    </span>
+  </a>
+
+  <button class="menu-toggle" id="menuToggle"
+    aria-label="Open navigation" aria-expanded="false">☰</button>
+
+  <nav id="mainNav">
+    <a href="#home">Home</a>
+    <a href="#styles">Hair Styles</a>
+    <a href="#services">Prices</a>
+    <a href="#about">About</a>
+    <a href="#reviews">Feedback</a>
+    <a href="#contact">Contact</a>
+    <a href="#booking" class="nav-cta">Find Your Look</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO / HOME -->
+  <section id="home" class="hero">
+    <div class="tool-mark mark-scissors">✂</div>
+    <div class="tool-mark mark-comb">▥</div>
+
+    <div class="hero-container">
+      <div class="hero-content">
+        <p class="eyebrow">M&F STUDIO™ · YOUR STYLE DESTINATION</p>
+
+        <h1>Discover Your<br>
+          <span>Signature Look.</span>
+        </h1>
+
+        <p class="hero-description">
+         Discover a style that feels like you. Bring your inspiration, explore new looks, and let M&F Studio help you achieve a hairstyle that reflects your personality and boosts your confidence.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#booking" class="btn btn-primary">
+            Let's Create Your New Look →
+          </a>
+          <a href="#styles" class="btn btn-outline">
+            Explore Hair Styles
+          </a>
+        </div>
+
+        <div class="hero-schedule">
+          <div>
+            <strong>MONDAY–FRIDAY</strong>
+            <span>Walk-in at the studio</span>
+          </div>
+          <div>
+            <strong>SATURDAY–SUNDAY</strong>
+            <span>Home service by appointment</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <div class="video-frame">
+          <video autoplay muted loop playsinline
+            preload="metadata" poster="images/cover-photo.jpg">
+            <source src="images/cv.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+          </video>
+
+          <div class="video-caption">
+            <span>M&F STUDIO™</span>
+            <small>YOUR STYLE. YOUR STATEMENT.</small>
+          </div>
+        </div>
+
+        <p class="media-note">
+          Your style journey starts here.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HAIRSTYLE SLIDER -->
+  <section id="styles" class="styles-section section">
+    <div class="section-heading">
+      <p class="eyebrow">THE STYLE EDIT</p>
+      <h2>Find Your Next Look</h2>
+      <p>
+        Explore different haircut and hair-styling options.
+        Swipe on your phone or use the arrows.
+      </p>
+    </div>
+
+    <div class="slider-shell">
+      <button class="slider-button previous" id="prevBtn"
+        aria-label="Previous hairstyle">‹</button>
+
+      <div class="style-slider" id="styleSlider">
+
+        <article class="style-slide">
+          <img src="images/fade.jpg" alt="Fade haircut" loading="lazy">
+          <div class="slide-info">
+            <span>01 / CLEAN &amp; SHARP</span>
+            <h3>Fresh Fade</h3>
+            <p>Low fade · Mid fade · High fade</p>
+            <button class="style-book" data-service="Short Haircut & Fade">
+              Choose This Style →
+            </button>
+          </div>
+        </article>
+
+        <article class="style-slide">
+          <img src="images/taper.jpg" alt="Modern taper haircut" loading="lazy">
+          <div class="slide-info">
+            <span>02 / CLASSIC MODERN</span>
+            <h3>Modern Taper</h3>
+            <p>Neat edges with a natural finish</p>
+            <button class="style-book" data-service="Short Haircut & Fade">
+              Choose This Style →
+            </button>
+          </div>
+        </article>
+
+        <article class="style-slide">
+          <img src="images/mullet.jpg" alt="Modern mullet haircut" loading="lazy">
+          <div class="slide-info">
+            <span>03 / BOLD &amp; DISTINCT</span>
+            <h3>Modern Mullet</h3>
+            <p>A bold style with texture</p>
+            <button class="style-book" data-service="Long Trim / Mullet / Wolf Cut">
+              Choose This Style →
+            </button>
+          </div>
+        </article>
+
+        <article class="style-slide">
+          <img src="images/wolfcut.jpg" alt="Wolf cut hairstyle" loading="lazy">
+          <div class="slide-info">
+            <span>04 / TEXTURE &amp; MOVEMENT</span>
+            <h3>Wolf Cut</h3>
+            <p>Layers, volume, and movement</p>
+            <button class="style-book" data-service="Long Trim / Mullet / Wolf Cut">
+              Choose This Style →
+            </button>
+          </div>
+        </article>
+
+        <article class="style-slide">
+          <img src="images/beard.jpg" alt="Haircut and beard styling" loading="lazy">
+          <div class="slide-info">
+            <span>05 / COMPLETE GROOMING</span>
+            <h3>Haircut + Beard</h3>
+            <p>A clean cut with a shaped beard</p>
+            <button class="style-book" data-service="Haircut + Beard">
+              Choose This Style →
+            </button>
+          </div>
+        </article>
+
+        <article class="style-slide">
+          <img src="images/color.jpg" alt="Hair coloring style" loading="lazy">
+          <div class="slide-info">
+            <span>06 / COLOR YOUR WAY</span>
+            <h3>Hair Color</h3>
+            <p>Refresh your look with color</p>
+            <button class="style-book" data-service="Hair Color">
+              Choose This Style →
+            </button>
+          </div>
+        </article>
+
+        <article class="style-slide">
+          <img src="images/braids.jpg" alt="Braided hairstyle" loading="lazy">
+          <div class="slide-info">
+            <span>07 / CREATIVE DETAIL</span>
+            <h3>Hair Braids</h3>
+            <p>Creative braids and patterns</p>
+            <button class="style-book" data-service="Hair Braids">
+              Choose This Style →
+            </button>
+          </div>
+        </article>
+
+      </div>
+
+      <button class="slider-button next" id="nextBtn"
+        aria-label="Next hairstyle">›</button>
+    </div>
+
+    <div class="slider-dots" id="sliderDots"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about-section section">
+    <div class="section-heading">
+      <p class="eyebrow">ABOUT M&F STUDIO™</p>
+      <h2>Good Hair. Great Confidence.</h2>
+      <p>
+        We help clients express their personality through thoughtful cuts,
+        modern styling, and friendly service.
+      </p>
+    </div>
+
+    <div class="about-grid">
+      <article class="about-card">
+        <span>✂</span>
+        <h3>Attention to Detail</h3>
+        <p>
+          From clean fades to carefully shaped long styles,
+          every detail matters.
+        </p>
+      </article>
+
+      <article class="about-card">
+        <span>✦</span>
+        <h3>Style Made for You</h3>
+        <p>
+          Choose a look that fits your face shape,
+          personality, and everyday routine.
+        </p>
+      </article>
+
+      <article class="about-card">
+        <span>⌂</span>
+        <h3>Convenient Home Service</h3>
+        <p>
+          Weekend home appointments are available on Saturday
+          and Sunday, subject to confirmation.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- PRICES -->
+  <section id="services" class="services-section section">
+    <div class="section-heading">
+      <p class="eyebrow">OUR SERVICE MENU</p>
+      <h2>Choose Your Service</h2>
+      <p>
+        Walk-in and home-service rates are separate.
+        Update these sample prices to your actual rates.
+      </p>
+    </div>
+
+    <div class="price-container">
+
+      <article class="price-box">
+        <div class="price-header">
+          <p>MONDAY–FRIDAY</p>
+          <h3>Walk-In</h3>
+          <span>Visit the studio</span>
+        </div>
+
+        <div class="price-list">
+          <div class="price-item">
+            <div>
+              <h4>Short Haircut &amp; Fades</h4>
+              <p>Classic cuts, taper, and fades</p>
+            </div>
+            <strong>₱150</strong>
+          </div>
+
+          <div class="price-item">
+            <div>
+              <h4>Long Trim / Mullet / Wolf Cut</h4>
+              <p>Longer and layered styles</p>
+            </div>
+            <strong>₱200</strong>
+          </div>
+
+          <div class="price-item">
+            <div>
+              <h4>Haircut + Beard</h4>
+              <p>Haircut and beard tidy-up</p>
+            </div>
+            <strong>₱220</strong>
+          </div>
+
+          <div class="price-item">
+            <div>
+              <h4>Hair Coloring</h4>
+              <p>Depends on hair length and color</p>
+            </div>
+            <strong>From ₱500</strong>
+          </div>
+
+          <div class="price-item">
+            <div>
+              <h4>Hair Braids</h4>
+              <p>Depends on the braid style</p>
+            </div>
+            <strong>From ₱350</strong>
+          </div>
+        </div>
+
+        <a href="#booking" class="price-cta">Plan Your Studio Visit →</a>
+      </article>
+
+      <article class="price-box home-price">
+        <div class="price-header">
+          <p>SATURDAY–SUNDAY</p>
+          <h3>Home Service</h3>
+          <span>We come to your location</span>
+        </div>
+
+        <div class="price-list">
+          <div class="price-item">
+            <div>
+              <h4>Short Haircut &amp; Fades</h4>
+              <p>Home-service rate</p>
+            </div>
+            <strong>₱250</strong>
+          </div>
+
+          <div class="price-item">
+            <div>
+              <h4>Long Trim / Mullet / Wolf Cut</h4>
+              <p>Home-service rate</p>
+            </div>
+            <strong>₱300</strong>
+          </div>
+
+          <div class="price-item">
+            <div>
+              <h4>Haircut + Beard</h4>
+              <p>Home-service rate</p>
+            </div>
+            <strong>₱320</strong>
+          </div>
+
+          <div class="price-item">
+            <div>
+              <h4>Hair Coloring</h4>
+              <p>Depends on hair length and color</p>
+            </div>
+            <strong>From ₱650</strong>
+          </div>
+
+          <div class="price-item">
+            <div>
+              <h4>Hair Braids</h4>
+              <p>Depends on braid style and length</p>
+            </div>
+            <strong>From ₱500</strong>
+          </div>
+        </div>
+
+        <p class="home-note">
+          <strong>Travel fee:</strong> An additional fee may apply
+          depending on your address. The total should be confirmed
+          before the appointment.
+        </p>
+
+        <a href="#booking" class="price-cta">Request Home Service →</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- BOOKING FORM -->
+  <section id="booking" class="booking-section section">
+    <div class="booking-container">
+
+      <div class="booking-text">
+        <p class="eyebrow">YOUR NEXT LOOK STARTS HERE</p>
+        <h2>Let's Make It Happen.</h2>
+
+        <p>
+          Tell us the style you want, choose your preferred date,
+          and send your appointment request.
+        </p>
+
+        <div class="booking-schedule">
+          <div>
+            <strong>MON–FRI</strong>
+            <span>Walk-in at the studio</span>
+          </div>
+          <div>
+            <strong>SAT–SUN</strong>
+            <span>Home service by appointment</span>
+          </div>
+        </div>
+
+        <p class="privacy-note">
+          Your appointment is not final until the studio confirms it.
+          Connect a form service or backend to receive real requests.
+        </p>
+      </div>
+
+      <form id="bookingForm" class="booking-form">
+        <h3>Request an Appointment</h3>
+
+        <label>Full Name
+          <input type="text" id="bookingName" autocomplete="name"
+            required placeholder="Your full name">
+        </label>
+
+        <label>Email Address
+          <input type="email" id="bookingEmail" autocomplete="email"
+            required placeholder="you@example.com">
+        </label>
+
+        <label>Contact Number
+          <input type="tel" id="bookingPhone" autocomplete="tel"
+            required placeholder="09XXXXXXXXX">
+        </label>
+
+        <label>Choose Your Service
+          <select id="bookingService" required>
+            <option value="">Select a service</option>
+            <option>Short Haircut &amp; Fade</option>
+            <option>Long Trim / Mullet / Wolf Cut</option>
+            <option>Haircut + Beard</option>
+            <option>Hair Color</option>
+            <option>Hair Braids</option>
+          </select>
+        </label>
+
+        <label>Appointment Type
+          <select id="bookingType" required>
+            <option value="">Select appointment type</option>
+            <option value="walkin">Walk-in — Monday to Friday</option>
+            <option value="home">Home Service — Saturday to Sunday</option>
+          </select>
+        </label>
+
+        <div class="two-column">
+          <label>Preferred Date
+            <input type="date" id="bookingDate" required>
+          </label>
+
+          <label>Preferred Time
+            <input type="time" id="bookingTime" required>
+          </label>
+        </div>
+
+        <label>Address / Special Request
+          <textarea id="bookingAddress" rows="3"
+            placeholder="Home-service address or special request"></textarea>
+        </label>
+
+        <button type="submit" class="btn btn-primary">
+          Send My Style Request →
+        </button>
+
+        <div id="bookingMessage" class="form-message" role="status"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- CUSTOMER REVIEWS -->
+  <section id="reviews" class="reviews-section section">
+    <div class="section-heading">
+      <p class="eyebrow">CUSTOMER FEEDBACK</p>
+      <h2>Your Experience Matters.</h2>
+      <p>Have you visited us? Share your experience and rating.</p>
+
+      <div class="rating-summary">
+        <span class="stars">★★★★★</span>
+        <strong id="averageRating">—</strong>
+        <span>(<span id="reviewCount">0</span> reviews on this device)</span>
+      </div>
+    </div>
+
+    <div class="review-grid" id="reviewList"></div>
+
+    <div class="feedback-box">
+      <h3>Tell Us About Your Experience</h3>
+      <p>
+        Your contact details are for follow-up only and will not appear
+        on the public review card.
+      </p>
+
+      <form id="reviewForm">
+        <label>Your Name
+          <input type="text" id="reviewName" autocomplete="name"
+            required placeholder="Your name">
+        </label>
+
+        <label>Email Address
+          <input type="email" id="reviewEmail" autocomplete="email"
+            required placeholder="you@example.com">
+        </label>
+
+        <label>Contact Number (optional)
+          <input type="tel" id="reviewPhone" autocomplete="tel"
+            placeholder="09XXXXXXXXX">
+        </label>
+
+        <label>Your Rating
+          <select id="reviewRating" required>
+            <option value="">Choose a rating</option>
+            <option value="5">★★★★★ — Excellent</option>
+            <option value="4">★★★★ — Great</option>
+            <option value="3">★★★ — Good</option>
+            <option value="2">★★ — Needs improvement</option>
+            <option value="1">★ — Poor</option>
+          </select>
+        </label>
+
+        <label>Your Feedback
+          <textarea id="reviewText" rows="4" required
+            placeholder="What did you like? What can we improve?"></textarea>
+        </label>
+
+        <button type="submit" class="btn btn-primary">
+          Submit Feedback
+        </button>
+
+        <div id="reviewMessage" class="form-message" role="status"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section section">
+    <div class="section-heading">
+      <p class="eyebrow">GET IN TOUCH</p>
+      <h2>Let's Talk Style.</h2>
+      <p>Replace the sample contact details with your actual information.</p>
+    </div>
+
+    <div class="contact-grid">
+      <a class="contact-card" href="tel:+639876543210">
+        <span>☎</span>
+        <h3>Call / Text</h3>
+        <p>+63 9876543210</p>
+      </a>
+
+      <a class="contact-card" href="mailto:mfstudio.signaturelook@gmail.com">
+        <span>✉</span>
+        <h3>Email</h3>
+        <p>mfstudio.signaturelook@gmail.com</p>
+      </a>
+
+      <a class="contact-card" href="https://facebook.com/"
+        target="_blank" rel="noopener noreferrer">
+        <span>f</span>
+        <h3>Facebook Page</h3>
+        <p>M&F Studio</p>
+      </a>
+
+      <a class="contact-card"
+        href="https://www.google.com/maps/search/?api=1&query=Aunubing%20Street%2C%20Ormoc%20City%2C%20Leyte%2C%20Philippines"
+        target="_blank" rel="noopener noreferrer">
+        <span>⌖</span>
+        <h3>Location</h3>
+        <p>Aunubing St, Ormoc City, Leyte</p>
+      </a>
+    </div>
+
+    <div class="address-box">
+      <strong>Studio address:</strong>
+      Aunubing Street, Barangay Cogon, Ormoc City, Leyte — near City College of Ormoc and beside the City Health Office.<br>
+      <strong>Walk-in:</strong> Monday–Friday.
+      <strong>Home service:</strong> Saturday–Sunday by appointment.
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-logo">M&amp;F STUDIO<sup>™</sup></div>
+  <p>Discover Your Signature Look.</p>
+  <p>© 2026 M&amp;F Studio™. All rights reserved.</p>
+</footer>
+
+<button id="backToTop" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
