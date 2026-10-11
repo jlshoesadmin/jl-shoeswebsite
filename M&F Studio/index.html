@@ -406,26 +406,31 @@
         </p>
       </div>
 
-      <form id="bookingForm" class="booking-form">
+     <form id="bookingForm" class="booking-form"
+      action="https://formspree.io/f/xqpebwqy"
+      method="POST">
         <h3>Request an Appointment</h3>
 
         <label>Full Name
-          <input type="text" id="bookingName" autocomplete="name"
-            required placeholder="Your full name">
+          
+<input type="text" id="bookingName" name="name" autocomplete="name"
+       required placeholder="Your full name">
+
         </label>
 
         <label>Email Address
-          <input type="email" id="bookingEmail" autocomplete="email"
-            required placeholder="you@example.com">
+          
+<input type="email" id="bookingEmail" name="email" autocomplete="email"
+       required placeholder="you@example.com">
         </label>
 
         <label>Contact Number
-          <input type="tel" id="bookingPhone" autocomplete="tel"
-            required placeholder="09XXXXXXXXX">
+          <input type="tel" id="bookingPhone" name="phone" autocomplete="tel"
+       required placeholder="09XXXXXXXXX">
         </label>
 
         <label>Choose Your Service
-          <select id="bookingService" required>
+          <select id="bookingService" name="service" required>
             <option value="">Select a service</option>
             <option>Short Haircut &amp; Fade</option>
             <option>Long Trim / Mullet / Wolf Cut</option>
@@ -436,7 +441,7 @@
         </label>
 
         <label>Appointment Type
-          <select id="bookingType" required>
+          <select id="bookingType" name="appointment_type" required>
             <option value="">Select appointment type</option>
             <option value="walkin">Walk-in — Monday to Friday</option>
             <option value="home">Home Service — Saturday to Sunday</option>
@@ -445,17 +450,17 @@
 
         <div class="two-column">
           <label>Preferred Date
-            <input type="date" id="bookingDate" required>
+            <input type="date" id="bookingDate" name="appointment_date" required>
           </label>
 
           <label>Preferred Time
-            <input type="time" id="bookingTime" required>
+           <input type="time" id="bookingTime" name="appointment_time" required>
           </label>
         </div>
 
         <label>Address / Special Request
-          <textarea id="bookingAddress" rows="3"
-            placeholder="Home-service address or special request"></textarea>
+          <textarea id="bookingAddress" name="notes" rows="3"
+    placeholder="Home-service address or special request"></textarea>
         </label>
 
         <button type="submit" class="btn btn-primary">
